@@ -637,7 +637,7 @@ $kofi: "DroidArabicKufiRegular";
       li:nth-child(odd) {
         span {
           position: absolute;
-          min-width: 90px;
+          min-width: 95px;
           bottom: -23px;
           left: -40px;
           font-size: 12px;
@@ -646,19 +646,19 @@ $kofi: "DroidArabicKufiRegular";
       li:nth-child(even) {
         span {
           position: absolute;
-          min-width: 90px;
+          min-width: 95px;
           bottom: -23px;
           left: -40px;
-          font-size: 13px;
+          font-size: 12px;
         }
       }
       li:nth-child(even) {
         span {
           position: absolute;
-          min-width: 90px;
+          min-width: 95px;
           top: -23px;
           left: -40px;
-          font-size: 13px;
+          font-size: 12px;
         }
       }
     }

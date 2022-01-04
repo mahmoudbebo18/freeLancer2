@@ -495,22 +495,22 @@ body {
     z-index: 3; }
 .orders-process .steps .defined-steps li:nth-child(odd) span {
   position: absolute;
-  min-width: 90px;
+  min-width: 95px;
   bottom: -23px;
   left: -40px;
   font-size: 12px; }
 .orders-process .steps .defined-steps li:nth-child(even) span {
   position: absolute;
-  min-width: 90px;
+  min-width: 95px;
   bottom: -23px;
   left: -40px;
-  font-size: 13px; }
+  font-size: 12px; }
 .orders-process .steps .defined-steps li:nth-child(even) span {
   position: absolute;
-  min-width: 90px;
+  min-width: 95px;
   top: -23px;
   left: -40px;
-  font-size: 13px; }
+  font-size: 12px; }
 .orders-process .steps .complete-step {
   width: 35px;
   height: 35px;
