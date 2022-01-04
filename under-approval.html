@@ -76,8 +76,7 @@
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
               <a class="nav-link" href="#"
-                >طلباتي
-                <span class="sr-only">(current)</span></a
+                >طلباتي <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
@@ -85,62 +84,90 @@
             </li>
           </ul>
         </div>
-       
       </div>
     </nav>
 
     <section class="orders orders-process upload-cv">
       <div
-        class="container orders-main-container d-flex align-items-center justify-content-center h-100"
+        class="
+          container
+          orders-main-container
+          d-flex
+          align-items-center
+          justify-content-center
+          h-100
+        "
       >
         <div class="order-holder w-100">
           <div class="order-header d-flex">
             <div class="client-info">اسم الخبير</div>
             <div class="client-info">الوظيفة الحالية</div>
-            <div class="order-process" class="w-50">حالة التقييم</div>
+            <div class="order-process w-50">حالة التقييم</div>
             <div class="client-info">استعرض التقييم</div>
-            
           </div>
+
+          <!-- All Orders will placed here  -->
           <div class="all-orders">
-            <div class="order-row align-items-center">
+              <!-- The Row that will be repeated  -->
+            <div class="order-row text-white align-items-center">
               <div class="expert-name">
-                لم يتم بعد
+                <img src="imgs/order-client.png" width="40" alt="" />
+                <span>أحمد ابراهيم</span>
               </div>
+
               <div class="expert-name current-job">
-                لم يتم بعد
+                مدير موارد بشرية
               </div>
+
+              <!-- The Rating Stepper  -->
               <div class="w-50">
-                  <div class="steps">
-                      <ul class="list-unstyled steps-ul p-0 m-0 d-flex align-items-center justify-content-between flex-row-reverse">
-                          <!-- The Active State  -->
-                          <li class="active-step">
-                              <img src="imgs/step-active.png" alt="active">
-                          </li>
-                          <!-- The inActive State  -->
-                          <li class="inactive-step">
-                              <img src="imgs/step-inactive.png" alt="inactive">
-                          </li>
-                          <!-- The inActive State  -->
-                          <li class="inactive-step">
-                            <img src="imgs/step-inactive.png" alt="inactive">
-                          </li>
-                          <!-- The inActive State  -->
-                          <li class="inactive-step">
-                            <img src="imgs/step-inactive.png" alt="inactive">
-                          </li>
-                      </ul>
-                  </div>
+                <div class="steps ">
+                  <ul
+                    class="
+                      list-unstyled
+                      steps-ul
+                      p-0
+                      m-0
+                      d-flex
+                      align-items-center
+                      justify-content-between
+                      flex-row-reverse
+                      defined-steps
+                    "
+                  >
+                    <!-- The Active State  -->
+                    <li class="active-step">
+                      <img src="imgs/step-active.png" alt="active" />
+                      <span>استلمت الطلب</span>
+                    </li>
+                    <!-- The inActive State  -->
+                    <li class="inactive-step">
+                      <img src="imgs/step-inactive.png" alt="inactive" />
+                      <span>ارسلت التقييم</span>
+                    </li>
+                    <!-- The inActive State  -->
+                    <li class="inactive-step">
+                      <img src="imgs/step-inactive.png" alt="inactive" />
+                      <span>تعديل الملاحظات</span>
+                    </li>
+                    <!-- The inActive State  -->
+                    <li class="inactive-step">
+                      <img src="imgs/step-inactive.png" alt="inactive" />
+                      <span>تم اعتماد التقييم</span>
+                    </li>
+                  </ul>
+                </div>
               </div>
+
+              <!-- The Rating Process  -->
               <div class="rating-process">
                 <p>حالة التقييم</p>
-                <a class="main-button" href="#">طلب جديد </a>
+                <a class="main-button under-approval" href="#">قيد الاعتماد </a>
               </div>
-
-
             </div>
+           
           </div>
         </div>
-
       </div>
     </section>
 

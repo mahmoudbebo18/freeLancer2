@@ -11,7 +11,7 @@ body {
   text-align: start; }
 
 /*main vars */
-/*main components */
+/*main classes  */
 .main-button {
   background-color: #079ed5;
   border: none;
@@ -26,6 +26,16 @@ body {
 .dark-bg {
   background-color: #c6cdd4 !important; }
 
+.processing {
+  background-color: #f2c421; }
+
+.under-approval {
+  background-color: #FDA829; }
+
+.done {
+  background-color: #07D589; }
+
+/*end main classes */
 .navbar {
   background-color: #707070;
   padding: 24px 0;
@@ -70,6 +80,9 @@ body {
   background-color: #708293;
   height: calc(100vh - 96px);
   padding: 64px 0; }
+  @media (max-width: 767px) {
+    .login-section {
+      min-height: calc(100vh - 96px); } }
   .login-section img {
     padding: 8px;
     left: 24px;
@@ -80,6 +93,9 @@ body {
   .login-section .login-form {
     height: 100%;
     padding-top: 124px; }
+    @media (max-width: 767px) {
+      .login-section .login-form {
+        padding-top: 0px; } }
     .login-section .login-form .submit-login {
       text-align: start; }
       @media (max-width: 375px) {
@@ -89,7 +105,7 @@ body {
         position: absolute;
         width: 100%;
         top: 13px;
-        margin-inline-start: 16px;
+        left: -105%;
         color: #ff0000; }
         @media (max-width: 767px) {
           .login-section .login-form .submit-login .error-mail {
@@ -99,7 +115,8 @@ body {
             margin-inline-start: 16px;
             font-size: 15px;
             margin-top: 5px;
-            width: fit-content; } }
+            width: 100%;
+            left: auto; } }
         @media (max-width: 375px) {
           .login-section .login-form .submit-login .error-mail {
             font-size: 13px; } }
@@ -109,7 +126,9 @@ body {
         text-align: center;
         padding: 12px;
         outline: none;
-        background-color: #d3d5d4; }
+        background-color: #d3d5d4;
+        width: 100%;
+        display: block; }
         @media (max-width: 375px) {
           .login-section .login-form .submit-login input {
             width: 100%; } }
@@ -148,6 +167,18 @@ body {
     border-radius: 5px;
     padding: 16px;
     text-align: center; }
+    .starter-page .starter-content .log-now {
+      position: absolute;
+      bottom: 25px;
+      background-color: rgba(211, 213, 212, 0.6);
+      width: 50%;
+      padding: 15px;
+      border-radius: 45px;
+      color: #26292c;
+      text-decoration: none;
+      transition: 0.3s; }
+      .starter-page .starter-content .log-now:hover {
+        background-color: #d3d5d4; }
     @media (max-width: 767px) {
       .starter-page .starter-content {
         margin-bottom: 24px; } }
@@ -382,6 +413,7 @@ body {
     border-radius: 20px;
     padding: 24px 8px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.48);
+    margin-bottom: 5px;
     display: flex; }
     @media (max-width: 575px) {
       .orders .all-orders .order-row {
@@ -428,7 +460,8 @@ body {
     display: block !important;
     overflow: auto;
     padding-top: 150px; }
-    .orders-main-container .order-header, .orders-main-container .all-orders {
+    .orders-main-container .order-header,
+    .orders-main-container .all-orders {
       min-width: 992px; } }
 
 /*orders-process*/
@@ -439,13 +472,14 @@ body {
   width: 30% !important;
   text-align: center !important; }
   .orders-process .rating-process .main-button {
-    margin-left: auto; }
+    margin-left: auto;
+    text-decoration: none; }
   .orders-process .rating-process p {
     width: 100% !important; }
 .orders-process .steps .steps-ul {
   position: relative; }
   .orders-process .steps .steps-ul::after {
-    content: '';
+    content: "";
     display: block;
     position: absolute;
     right: 2px;
@@ -457,5 +491,160 @@ body {
   .orders-process .steps .steps-ul li {
     position: relative;
     z-index: 3; }
+.orders-process .steps .defined-steps li:nth-child(odd) span {
+  position: absolute;
+  min-width: 90px;
+  bottom: -23px;
+  left: -40px;
+  font-size: 12px; }
+.orders-process .steps .defined-steps li:nth-child(even) span {
+  position: absolute;
+  min-width: 90px;
+  bottom: -23px;
+  left: -40px;
+  font-size: 13px; }
+.orders-process .steps .defined-steps li:nth-child(even) span {
+  position: absolute;
+  min-width: 90px;
+  top: -23px;
+  left: -40px;
+  font-size: 13px; }
+.orders-process .steps .complete-step {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: #079ed5; }
+
+/*classification-page*/
+.classification-page {
+  min-height: calc(100vh - 96px);
+  background-color: #708293;
+  padding: 50px 0px; }
+  .classification-page .all-orders {
+    height: auto; }
+  .classification-page .main-button {
+    padding: 12px 16px; }
+  @media (max-width: 991px) {
+    .classification-page .orders-main-container {
+      padding: 0; } }
+  .classification-page .all-orders #accordion .card {
+    background-color: transparent;
+    border: none; }
+    .classification-page .all-orders #accordion .card .card-header {
+      border: none; }
+      .classification-page .all-orders #accordion .card .card-header button {
+        text-decoration: none !important;
+        position: relative; }
+        .classification-page .all-orders #accordion .card .card-header button .arrow-img {
+          left: 16px;
+          top: 42%;
+          width: 21px; }
+          @media (max-width: 991px) {
+            .classification-page .all-orders #accordion .card .card-header button .arrow-img {
+              display: none; } }
+    .classification-page .all-orders #accordion .card .card-body {
+      background-color: #929fa9;
+      border-radius: 20px;
+      padding: 24px 8px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.48);
+      margin-bottom: 16px; }
+      .classification-page .all-orders #accordion .card .card-body .row {
+        flex-wrap: nowrap !important; }
+      .classification-page .all-orders #accordion .card .card-body .classification {
+        font-family: "DroidArabicKufiRegular"; }
+        .classification-page .all-orders #accordion .card .card-body .classification .main-class-row {
+          margin-bottom: 10px; }
+        .classification-page .all-orders #accordion .card .card-body .classification .classifications-items h5 {
+          color: #fff;
+          margin-bottom: 8px; }
+        .classification-page .all-orders #accordion .card .card-body .classification .classifications-items h6 {
+          padding: 10px;
+          border-radius: 20px;
+          background-color: #d3d5d4;
+          color: #102b49;
+          font-size: 14px; }
+        .classification-page .all-orders #accordion .card .card-body .classification .classifications-numbers .number li {
+          width: 20px;
+          height: 20px;
+          border-radius: 50%;
+          position: relative;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          background-color: #d3d5d4;
+          margin: 0 4px; }
+          .classification-page .all-orders #accordion .card .card-body .classification .classifications-numbers .number li input {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            right: 0;
+            top: 0;
+            z-index: 10;
+            opacity: 0; }
+          .classification-page .all-orders #accordion .card .card-body .classification .classifications-numbers .number li span {
+            font-size: 13px; }
+        .classification-page .all-orders #accordion .card .card-body .classification .classifications-numbers .number li.active {
+          background-color: #079ed5; }
+          .classification-page .all-orders #accordion .card .card-body .classification .classifications-numbers .number li.active span {
+            color: #fff; }
+        .classification-page .all-orders #accordion .card .card-body .classification .classifications-numbers .number.first-ul {
+          margin: 20px 0 0 0; }
+      .classification-page .all-orders #accordion .card .card-body .recommendations h5 {
+        color: #fff; }
+      .classification-page .all-orders #accordion .card .card-body .recommendations textarea {
+        height: 35px;
+        resize: none;
+        background-color: #d3d5d4;
+        border-radius: 20px;
+        border: none;
+        padding: 0 15px;
+        outline: none !important; }
+      .classification-page .all-orders #accordion .card .card-body .submit-classification {
+        padding: 0 30px;
+        text-align: end; }
+        .classification-page .all-orders #accordion .card .card-body .submit-classification button {
+          border: none;
+          background-color: #D3D5D4;
+          border-radius: 20px;
+          padding: 5px 9px;
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer; }
+          .classification-page .all-orders #accordion .card .card-body .submit-classification button span {
+            margin-inline-end: 4px;
+            display: block; }
+      .classification-page .all-orders #accordion .card .card-body .final-process-submit button {
+        background-color: #07D589 !important;
+        cursor: pointer;
+        padding: 8px 24px; }
+      .classification-page .all-orders #accordion .card .card-body .left-part .empty-area {
+        height: 100%;
+        background-color: #d3d5d4;
+        border-radius: 10px; }
+    .classification-page .all-orders #accordion .card .second-final-process-page .number {
+      justify-content: center !important; }
+    .classification-page .all-orders #accordion .card .second-final-process-page .recommendations textarea {
+      display: block;
+      width: 100%; }
+    .classification-page .all-orders #accordion .card .second-final-process-page .upload-your-cv {
+      width: fit-content;
+      margin-right: auto;
+      padding: 5px 15px;
+      background-color: #D3D5D4;
+      border-radius: 20px; }
+      .classification-page .all-orders #accordion .card .second-final-process-page .upload-your-cv input {
+        z-index: 11;
+        opacity: 0; }
+      .classification-page .all-orders #accordion .card .second-final-process-page .upload-your-cv span {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    .classification-page .all-orders #accordion .card .second-final-process-page .submit-classification button {
+      background-color: transparent;
+      padding: 0;
+      border-radius: 0;
+      margin-right: 16px; }
 
 /*# sourceMappingURL=style.css.map */
