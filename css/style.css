@@ -209,6 +209,8 @@ body {
 /*opt*/
 .opt {
   height: auto; }
+  .opt .form-group {
+    width: fit-content; }
   @media (max-width: 991px) {
     .opt img.main-bg {
       width: 100%;

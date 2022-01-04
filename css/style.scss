@@ -266,6 +266,9 @@ $kofi: "DroidArabicKufiRegular";
 /*opt*/
 .opt {
   height: auto;
+  .form-group{
+    width: fit-content;
+  }
   img.main-bg {
     @media (max-width: 991px) {
       width: 100%;
