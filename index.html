@@ -1,94 +1,245 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home</title>
-    <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/fontawesome-all.min.css" />
-    <link
-      rel="stylesheet"
-      media="screen"
-      href="https://fontlibrary.org//face/droid-arabic-kufi"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
 
-  <body dir="rtl">
-    <!-- NavBar -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/fontawesome-all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
 
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+<body dir="ltr">
+  <header class="hero position-relative">
+    <div class="nav_container">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand" href="#">
+            <img src="imgs/logo.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars text-white"></i>
+          </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto ml-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >الرئيسية <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">المدونة</a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="#">تواصل معنا</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">تعرف علينا </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link login" href="#">سجل دخول </a>
-          </li>
-        </ul>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-uppercase" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase" href="#">Our Expertise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase " href="#">Our Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase " href="#">about us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase " href="#">join us </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-uppercase " href="#">insights </a>
+              </li>
+            </ul>
+            <a href="#" class="contac_us text-uppercase">Contact us</a>
+          </div>
+        </nav>
       </div>
-    </nav>
-
-    <section class="login-section position-relative">
-        <img src="imgs/Group 15.png" class="h-100 position-absolute" alt="">
-       <div class="container">
-        <div class="login-form d-flex position-relative">
-            <form class="submit-login">
-                <div class="form-group position-relative">
-                    <input type="email" name="email" placeholder="بريدك الإلكتروني" id="myMail">
-                    <span class="error-mail">البريد غير مسجل</span>
-                </div>
-                <div class="form-group position-relative">
-                    <input type="password" name="password"  placeholder="كلمة المرور" id="myMail">
-                    <i class="fas fa-eye position-absolute"></i>
-                    <span class="error-mail">كلمة المرور غير صحيحة</span>
-                </div>
-                <div class="password-reset d-flex justify-content-between">
-                    <div class="keep-login d-flex align-items-center">
-                        <input type="checkbox" class="check" name="ckeck" id="checkMe">
-                        <span>ابقني على اتصال </span>
-                    </div>
-                    <a href="#">استعادة كلمة المرور</a>
-                </div>
-                <div class="form-button text-center">
-                  <button class="submit main-button d-inline-block mt-4">دخول</button>
-                </div>
-
-            </form>
+    </div>
+    <div class="hero_content">
+      <div class="container">
+        <div class="intro">
+          <h1>
+            Finish your construction project
+            with every penny well spent
+          </h1>
+          <p>
+            Your budget under control and your project on track.
+          </p>
+          <div class="actions">
+            <a href="#" class="contact text-uppercase"> contact us </a>
+            <a href="#" class="learn text-uppercase"> learn more <i class="fas fa-arrow-down"></i> </a>
+          </div>
         </div>
-       </div>
-    </section>
+      </div>
+    </div>
+    <div class="more_links">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="content">
+            <div class="caption d-flex align-items-center">
+              <p class="m-0">Our Expertise</p>
+              <a href="#"><img src="imgs/arrow_right.png" alt="arrow_right"> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="content">
+            <div class="caption d-flex align-items-center">
+              <p class="m-0">Our Projects</p>
+              <a href="#"><img src="imgs/arrow_right.png" alt="arrow_right"> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="content">
+            <span class="text-uppercase d-block">Insights</span>
+            <div class="caption d-flex align-items-center">
+              <p class="m-0">7 questions you should <br> be asking your QS du...</p>
+              <a href="#"><img src="imgs/arrow_right.png" alt="arrow_right"> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
 
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+
+  <section class="stats">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-lg-7">
+          <div class="content">
+            <p>
+              Around 70% of construction projects in the UK finish over budget by more than 10%. Moreover, only x% of
+              clients are satisfied with the outcomes of their projects.
+            </p>
+            <p>
+              We passionately believe that there is a better way to deliver cost consultancy services in a very
+              personalised way that results in better buildings and outcomes for you, and improves the built environment
+              we live in.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="right_content">
+            <div class="item">
+              <span class="number">20+</span>
+              <p>Years of experience in commercial and residential sectors in Edinburgh</p>
+            </div>
+            <div class="item">
+              <span class="number">10+</span>
+              <p>Awards and commendations from industry and clients</p>
+            </div>
+            <div class="item">
+              <span class="number">£500m+</span>
+              <p>Construction, refurbishment and fitout projects delivered.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="what_we_do">
+    <div class="row m-0">
+      <div class="col-lg-6 p-0">
+        <div class="content">
+          <img class="w-100" src="imgs/wat_we_do.png" alt="what we do" />
+        </div>
+      </div>
+      <div class="col-lg-6 p-0 main_content">
+        <div class="content right_content">
+          <small>What we do</small>
+          <h2>
+            Your refurbishment project delivered on time and on budget.
+          </h2>
+          <p>
+            Early cost advice helps avoid expensive mistakes - make sure you have cost certainty for your commercial
+            or residential project, with your trusted Torridon adviser.
+          </p>
+          <span>
+            We are your construction cost partner.
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container">
+      <div class="wrapper">
+        <h6>our services</h6>
+        <p class="intro">
+          Torridon specialises in cost consultancy services on commercial and residential projects. Our goal is to
+          increase your bottom line through proactive management of your construction projects from inception to
+          completion.
+        </p>
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="content">
+              <img class="w-100" src="imgs/left_ser.png" alt="">
+              <h3>Commercial Refurbishment Projects</h3>
+              <p>
+                Understanding project viability, controlling your costs to ensure there are no surprises and getting the
+                best value for your commercial office refurbishment or fit-out project.
+              </p>
+              <a href="#"> learn more </a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="content">
+              <img class="w-100" src="imgs/left_ser.png" alt="">
+              <h3>Commercial Refurbishment Projects</h3>
+              <p>
+                Understanding project viability, controlling your costs to ensure there are no surprises and getting the
+                best value for your commercial office refurbishment or fit-out project.
+              </p>
+              <a href="#"> learn more </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="services feat_proj">
+    <div class="container">
+      <div class="wrapper">
+        <h6 class="text-uppercase">Featured Projects</h6>
+        <div class="d-flex align-items-center justify-content-between">
+          <p class="intro">
+            Torridon specialises in cost consultancy services on commercial and residential projects. Our goal is to
+            increase your bottom line through proactive management of your construction projects from inception to
+            completion.
+          </p>
+          <a class="main_link" href="#">view all projects</a>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 position-relative">
+            <div class="proj_content">
+              <img class="w-100" src="imgs/left_proj.png" alt="">
+              <div class="proj_links position-absolute">
+                <a href="#">Residential</a>
+                <img src="imgs/separator.png" alt="">
+                <a href="#">LEISURE</a>
+                <img src="imgs/separator.png" alt="">
+                <a href="#">Construction</a>
+                <div class="caption">
+                  Office Refurbishment and Fit-out
+                  for Chivas brothers
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="content">
+              <img class="w-100" src="imgs/right_top_proj.png" alt="">
+            </div>
+            <div class="content">
+              <img class="w-100" src="imgs/eight_bottom_proj.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
