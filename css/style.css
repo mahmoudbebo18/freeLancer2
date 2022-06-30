@@ -207,12 +207,17 @@ body {
   margin-bottom: 40px;
   font-size: 35px;
   line-height: 45px;
+  color: #4C4F52;
+  font-family: "TitilliumWeb-SemiBold";
 }
 @media (max-width: 767px) {
   .stats .content p {
     font-size: 24px;
     line-height: 34px;
   }
+}
+.stats .content p:first-of-type {
+  font-family: "TitilliumWeb-Regular";
 }
 .stats .right_content {
   display: flex;
@@ -259,6 +264,7 @@ body {
   font-size: 18px;
   font-family: "TitilliumWeb-SemiBold";
   display: block;
+  text-transform: uppercase;
 }
 .what_we_do .right_content h2 {
   margin-bottom: 32px;
@@ -284,6 +290,7 @@ body {
   font-size: 18px;
   font-family: "TitilliumWeb-SemiBold";
   margin-bottom: 22px;
+  text-transform: uppercase;
 }
 .services .wrapper .intro {
   color: #4C4F52;
@@ -319,6 +326,9 @@ body {
   text-transform: uppercase;
 }
 
+.feat_proj .proj_content {
+  margin-bottom: 24px;
+}
 .feat_proj .proj_content .proj_links {
   top: 48px;
   left: 64px;
@@ -326,6 +336,8 @@ body {
 }
 .feat_proj .proj_content .proj_links a {
   color: #fff;
+  font-size: 18px;
+  font-family: "TitilliumWeb-SemiBold";
 }
 .feat_proj .proj_content .proj_links img {
   margin: 0 4px;
@@ -334,5 +346,214 @@ body {
   margin-top: 16px;
   font-size: 28px;
   font-family: "TitilliumWeb-SemiBold";
+  color: #fff;
+}
+
+.stories_slider {
+  border-top: 1px solid #A8A8A8;
+  border-bottom: 1px solid #A8A8A8;
+}
+.stories_slider #carouselExampleControls {
+  padding-top: 48px;
+  height: 100%;
+  position: relative;
+}
+.stories_slider #carouselExampleControls .quote p {
+  font-size: 28px;
+  color: #4C4F52;
+  line-height: 38px;
+  margin-bottom: 24px;
+}
+.stories_slider #carouselExampleControls .signature img {
+  -webkit-margin-end: 12px;
+          margin-inline-end: 12px;
+}
+.stories_slider #carouselExampleControls .signature span {
+  font-size: 18px;
+  font-family: "TitilliumWeb-SemiBold";
+  color: #4C4F52;
+}
+.stories_slider #carouselExampleControls .carousel-control-prev {
+  width: 50px;
+  height: 50px;
+  top: auto;
+  bottom: 15%;
+  border: 1px solid #A8A8A8;
+  opacity: 1;
+  color: #A8A8A8;
+  font-size: 24px;
+  font-family: "TitilliumWeb-SemiBold";
+}
+.stories_slider #carouselExampleControls .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: auto;
+  bottom: 15%;
+  border: 1px solid #772462;
+  opacity: 1;
+  color: #772462;
+  right: auto;
+  left: 12%;
+  font-size: 24px;
+  font-family: "TitilliumWeb-SemiBold";
+}
+
+.about_us .main_link {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+/*partners*/
+.partners {
+  background-color: #772462;
+  padding: 160px 0;
+}
+.partners h6 {
+  margin-bottom: 81px;
+}
+.partners img {
+  height: 60px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 91px;
+}
+
+.insights {
+  padding: 160px 0 !important;
+}
+.insights .links {
+  margin-bottom: 16px;
+}
+.insights .links img {
+  margin: 0 12px;
+}
+.insights .links a {
+  font-size: 18px;
+  font-family: "TitilliumWeb-SemiBold";
+  color: #772462;
+}
+.insights h4 {
+  font-size: 28px;
+  font-family: "TitilliumWeb-SemiBold";
+  margin-bottom: 32px;
+  line-height: 38px;
+}
+.insights .avatar img {
+  -webkit-margin-end: 12px;
+          margin-inline-end: 12px;
+}
+.insights .avatar h5 {
+  font-size: 18px;
+  font-family: "TitilliumWeb-SemiBold";
+  color: #4C4F52;
+  margin: 0;
+}
+.insights .avatar span {
+  color: #4C4F52;
+}
+.insights .icon_img {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+.insights .cards {
+  box-shadow: 4px 10px 40px rgba(0, 0, 0, 0.1);
+  margin-top: 80px;
+}
+.insights .cards .card_body {
+  background-color: #F0F0F0;
+  border: 1px solid #D6D6D6;
+  padding: 24px;
+}
+.insights .cards .card_body p {
+  font-size: 21px;
+  color: #4C4F52;
+  font-family: "TitilliumWeb-SemiBold";
+  margin-bottom: 32px;
+}
+.insights .cards .card_body .avatar img {
+  margin-left: 0;
+}
+
+footer {
+  background-color: #4C4F52;
+  padding: 112px 0 232px;
+  position: relative;
+}
+footer .content span {
+  color: #A8A8A8;
+  font-size: 12px;
+  font-family: "TitilliumWeb-SemiBold";
+  display: block;
+  margin-bottom: 28px;
+}
+footer .content form input,
+footer .content form textarea {
+  background-color: #44474A;
+  border: none;
+  padding: 12px 16px;
+  resize: none;
+}
+footer .content form input::-moz-placeholder, footer .content form textarea::-moz-placeholder {
+  color: #fff;
+}
+footer .content form input:-ms-input-placeholder, footer .content form textarea:-ms-input-placeholder {
+  color: #fff;
+}
+footer .content form input::placeholder,
+footer .content form textarea::placeholder {
+  color: #fff;
+}
+footer .content form .submit {
+  padding: 8px 32px;
+  border: 1px solid #fff;
+  color: #fff;
+  font-family: "TitilliumWeb-SemiBold";
+}
+footer .contact_sec h5 {
+  color: #A8A8A8;
+  font-size: 12px;
+  font-family: "TitilliumWeb-SemiBold";
+  display: block;
+  margin-bottom: 28px;
+}
+footer .contact_sec .data {
+  margin-bottom: 16px;
+  color: #fff;
+}
+footer .contact_sec .data img {
+  -webkit-margin-end: 8px;
+          margin-inline-end: 8px;
+}
+footer .locations {
+  margin-top: 40px;
+  color: #fff;
+}
+footer .locations span {
+  color: #A8A8A8;
+  font-size: 12px;
+  font-family: "TitilliumWeb-SemiBold";
+  display: block;
+  margin-bottom: 16px;
+}
+footer .locations a {
+  color: #fff;
+  margin: 0 8px;
+}
+footer .copyrights {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #414446;
+  padding: 48px 0;
+}
+footer .copyrights p {
+  color: #fff;
+  font-family: "TitilliumWeb-SemiBold";
+}
+footer .copyrights p a {
+  margin-left: 30px;
+  text-decoration: underline;
   color: #fff;
 }/*# sourceMappingURL=style.css.map */
